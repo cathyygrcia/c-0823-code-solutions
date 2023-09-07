@@ -1,0 +1,29 @@
+.big-button {
+  padding: 10px 30px;
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.big-button:hover {
+  background-color: black;
+  color: white;
+}
+
+table {
+  background-color: lightgray;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

@@ -13,14 +13,24 @@
     <h3>Learn More</h3>
     <form>
       <div>
-        <label>Company Email</label>
-        <input type="email" placeholder="sally@company.co" />
-        <label>Name</label>
-        <input type="text" placeholder="Sally Smith" />
-        <label>Where are you hiring?</label>
-        <input type="text" placeholder="City, Country" />
-        <label>How many engineers are you hiring in the next 6 months?</label>
-        <select>
+        <label for="email">Company Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="sally@company.co" />
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Sally Smith" />
+        <label for="hiring">Where are you hiring?</label>
+        <input
+          type="text"
+          id="hiring"
+          name="hiring"
+          placeholder="City, Country" />
+        <label for="options"
+          >How many engineers are you hiring in the next 6 months?</label
+        >
+        <select id="options" name="options">
           <option>1-2 Engineers</option>
         </select>
         <button>SUBMIT</button>

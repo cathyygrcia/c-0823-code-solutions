@@ -11,7 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   It doesnt remove it from the document flow. it allows you to shift the elements from top, right, bottom, and left.
 
 - How does setting `position: relative` on an element affect where it appears on the page?
-  it will be shifted from its original position based on those values, while still taking up space in the layout as if it were in its original position.
+  doesnt get affected. it will be shifted from its original position based on those values, while still taking up space in the layout as if it were in its original position.
 
 - How does setting `position: absolute` on an element affect document flow?
   Removes it from the normal document flow, causing other elements to ignore the space it would have occupied.

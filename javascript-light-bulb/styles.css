@@ -1,0 +1,28 @@
+body {
+  background-color: #fef9f1;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb {
+  width: 250px;
+  height: 250px;
+  border: none;
+  border-radius: 50%;
+  background-color: #faea84;
+  box-shadow: 4px 4px 12px yellow;
+}
+
+.bulb.dark {
+  background-color: #252525;
+  box-shadow: 4px 4px 12px black;
+}
+
+.body.dark {
+  background-color: #111;
+}

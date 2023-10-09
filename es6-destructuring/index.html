@@ -67,16 +67,16 @@
         },
       ];
 
-      const book3 = library[0];
+      const [book3, book4, book5] = library;
+
       console.log('book3', book3);
 
-      const book4 = library[1];
       console.log('book4', book4);
 
-      const book5 = library[2];
       console.log('book5', book5);
 
-      const book6 = library[3];
+      const [, , , book6] = library;
+
       console.log('book6', book6);
     </script>
   </body>

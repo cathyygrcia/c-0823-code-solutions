@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+span {
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+
+.correct {
+  color: #60ce34;
+}
+
+.underline {
+  border-bottom: solid;
+}
+
+.incorrect {
+  color: red;
+}

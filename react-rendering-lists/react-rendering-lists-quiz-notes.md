@@ -6,15 +6,27 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - When would we want to dynamically create a list of React components?
 
+  When you need to render a variable number of components based on data.
+
 - Why is it important for React components to be data-driven?
+
+  They make your application more flexible and maintainable
 
 - Where in the component code would a list of React components typically be built?
 
+  in a render method of a functional component
+
 - What `Array` method is commonly used to create a list of React components?
+
+.map()
 
 - Why do components in a list need to have unique keys?
 
+  to enable efficient updates
+
 - What is the best value to use as a "key" prop when rendering lists?
+
+  a unique identifier associated with each item in the list.
 
 ## Notes
 

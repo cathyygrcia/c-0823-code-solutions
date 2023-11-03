@@ -14,7 +14,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What is a convenient way to run an Express server written in TypeScript?
 
-  create a 'tsconfig.json' file and install necessary dependencies
+  create a 'tsconfig.json' file and install necessary dependencies.
 
 ## Notes
 

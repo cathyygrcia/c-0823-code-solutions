@@ -1,31 +1,24 @@
-const url = 'https://jsonplaceholder.typicode.com/users';
+async function users() {
+  try {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    if (!res.ok) throw new Error(`fetch Error ${res.status}`);
+    const users = await res.json();
+    console.log(users);
+  } catch (err) {
+    console.error('failed', err);
+  }
+}
 
-fetch(url)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then((users) => {
-    console.log('Array of user objects:', users);
-  })
-  .catch((error) => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+async function pokemon() {
+  try {
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon/25');
+    if (!res.ok) throw new Error(`fetch Error ${res.status}`);
+    const pikachu = await res.json();
+    console.log(pikachu);
+  } catch (err) {
+    console.error('failed', err);
+  }
+}
 
-const pokeUrl = 'https://pokeapi.co/api/v2/pokemon/25';
-
-fetch(pokeUrl)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then((pokemonData) => {
-    console.log('Pokemon Data:', pokemonData);
-  })
-  .catch((error) => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+pokemon();
+users();
